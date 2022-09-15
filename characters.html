@@ -6,33 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylechar.css">
-    <script src="./character.js"></script>
+    <script defer src="./character.js"></script>
     <title>Characters</title>
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <h1>Rick and Morty</h1>
         <div>
-            <ul>
-                <li>
-                    <a href="./home.html">Home</a>
-                </li>
-                <li>
-                    <a href="./characters.html">Characters</a>
-                </li>
-                <li>
-                    <a href="./aboutme.html">About Me</a>
-                </li>
-            </ul>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur cupiditate vitae nesciunt similique maxime odit ut voluptate quo! Veniam possimus dolor vero perspiciatis atque velit aliquam officia quis eos tenetur.</p>
-            <form>
-                <label for="Choose a Character"></label>
-                <input id="charName" name="charName" type="text" />
-                <input type="submit">
-            </form>
-
+            <header>
+                <ul>
+                    <li>
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./characters.html">Characters</a>
+                    </li>
+                    <li>
+                        <a href="./aboutme.html">About Me</a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+        <form>
+            <!-- Using form to allow user to input a character name  -->
+            <label for="Choose a Character"> Choose a Character</label>
+            <input id="character" name="character" type="text" placeholder="Rick" />
+            <input type="submit">
+        </form>
     </header>
+    <main class="output">
+        <aside> </aside>
+
+
+    </main>
+    <section class="searched">
+        <H4>Searched</H4>
+        <ul></ul>
+        <p class="hidden">No previous searches.</p>
+    </section>
 </body>
 
 </html>

@@ -1,5 +1,13 @@
 /* characters */
 
+body {
+    text-align: center;
+}
+
+pic {
+    border: 2px solid black;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
