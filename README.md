@@ -18,7 +18,7 @@ Go Live
 
 Once you go like you will be able to interact with the website.
 
-#Instructions:
+# Instructions:
 
 - Once you go live click, you will see the home/landing page which will show a picture of Rick and Morty and a paragraph telling you about the show.
 - Then select the characters page, once on the characters page input a character name such as ("rick, morty, summer, beth, etc"). As your output you will be seeing the characters' image, name, status, species and how many episodes they are featured in.
