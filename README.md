@@ -1,6 +1,6 @@
 # Yianna Richey 9-1-frontend-portfolio-project
 
-In this portfolio, I've had the opportunity to design a webpage using the Rick and Morty Api. 
+In this portfolio, I've had the opportunity to design a webpage using the Rick and Morty Api https://rickandmortyapi.com/documentation/#get-a-single-character. 
 
 Page Setup
 Getting started
