@@ -1,19 +1,150 @@
-/* characters */
-
-body {
+        /* characters */
+        
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        body {
+            /* background-image: url('./Background Img/tv-show-rick-and-morty-morty-smith-rick-sanchez-hd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100vh;
+    border: 10px solid black;
     text-align: center;
-}
-
-pic {
-    border: 2px solid black;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
-}
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            background-image: url('./Background Img/tv-show-rick-and-morty-morty-smith-rick-sanchez-hd-wallpaper-preview.jpg');
+            background-size: cover;
+            background-repeat: none;
+        }
+        
+        h1 {
+            color: aqua;
+            background-color: black;
+        }
+        
+        .container {
+            background-color: black;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .mainNav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a:hover {
+            color: limegreen;
+        }
+        
+        a:visited {
+            color: lime;
+        }
+        
+        li {
+            display: inline;
+        }
+        
+        div {
+            padding: 10px;
+        }
+        
+        form {
+            color: limegreen;
+            padding: 10px;
+        }
+        
+        .output {
+            text-align: center;
+            padding: 10px;
+            display: inline;
+        }
+        /* .hide-item:hover .hide-item,
+        .hide-item:focus .hide-item {
+            transform: scale(0);
+        } */
+        
+        .output .name {
+            color: limegreen;
+            background-color: black;
+        }
+        
+        .output .status {
+            color: limegreen;
+            background-color: black;
+        }
+        
+        .output .species {
+            color: limegreen;
+            background-color: black;
+        }
+        
+        p {
+            color: limegreen;
+            background-color: black;
+        }
+        /* media queries  */
+        
+        @media (max-width: 768px) {
+            body {
+                background: url('./Background Img/tv-show-rick-and-morty-morty-smith-rick-sanchez-hd-wallpaper-preview.jpg');
+                background-repeat: repeat;
+                border: 1px solid black;
+                padding: 0px;
+            }
+            h1 {
+                background: gray;
+            }
+            .container {
+                color: black;
+                background: gray;
+                border: 2px dotted black;
+            }
+            .mainNav {
+                background-color: gray;
+                color: black;
+            }
+            .mainNav:hover {
+                background-color: red;
+            }
+        }
+        /* @media(max-width:768px) {
+            body {
+                background: url('./Background Img/tv-show-rick-and-morty-morty-smith-rick-sanchez-hd-wallpaper-preview.jpg');
+                background-repeat: repeat;
+                padding: 0px;
+            }
+            .container {
+                border: 1px solid limegreen;
+                color: limegreen;
+                background: gray;
+            }
+            .mainNav {
+                background-color: gray;
+            }
+            .mainNav:hover {
+                background-color: blue;
+            }
+        }
+         */
+        
+        @media (min-width: 400px) {
+            body {
+                background: url('./Background Img/tv-show-rick-and-morty-morty-smith-rick-sanchez-hd-wallpaper-preview.jpg');
+                background-repeat: repeat;
+            }
+            .container {
+                border: 1px solid limegreen;
+                color: limegreen;
+                background: black;
+            }
+            .mainNav {
+                background-color: black;
+            }
+            .mainNav:hover {
+                background-color: purple;
+            }
+        }

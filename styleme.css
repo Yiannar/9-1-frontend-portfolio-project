@@ -6,6 +6,73 @@ ul {
     padding: 0;
 }
 
+a:hover {
+    color: limegreen;
+}
+
+a:visited {
+    color: limegreen;
+}
+
 li {
     display: inline;
+}
+
+
+/* 
+* {
+    margin: 0%;
+    padding: 0%;
+} */
+
+body {
+    background-image: url('Background Img/sunset.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    gap: 50px;
+    text-align: center;
+    /* background-position: center center; */
+    /* width: 100px;
+    height: 100vh; */
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    border-radius: 15px 50px;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 0 20px 20px 0;
+    width: 200px;
+    height: 200px;
+    float: left;
+    ;
+}
+
+.intro {
+    /* grid-row: 1fr;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    padding: 10px; */
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    font-size: 24px;
+    padding: 15px;
+    margin: 5px;
+    text-align: justify;
+}
+
+.intro .linkedIn {
+    color: blue;
+}
+
+.linkedIn:hover {
+    color: red;
 }

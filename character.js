@@ -19,6 +19,8 @@ const output = document.querySelector(".output")
 const p = document.querySelector(".hidden")
 const searched = document.querySelector(".searched")
 
+const listed = document.querySelector(".listed")
+
 
 // using addEventListener to Submit so that nameId can have the same value as the character name to match up with api character id#
 form.addEventListener("submit", (event) => {
@@ -68,6 +70,8 @@ form.addEventListener("submit", (event) => {
         nameId = 18
     } else if (id.value.toLowerCase() === "ants in my eyes johnson" || id.value.toLowerCase() === "johnson" || id.value.toLowerCase() === "ant") {
         nameId = 19
+    } else {
+        alert("You must enter a character name");
     }
     form.reset()
         // using ${nameId} to allow the id number to recieve the character data to be dynamic
@@ -94,30 +98,34 @@ form.addEventListener("submit", (event) => {
             let episodesCharIsIn = res.episode
             console.log(episodesCharIsIn)
             let numEpisode = res.episode.length
+
             const episode = document.createElement("p")
             episode.innerHTML = `<strong>Number of Episodes featured in:</strong> ${numEpisode}`
 
-
-            const name = document.createElement("p")
-            name.innerHTML = `<strong>Name</strong>:${charName}`
-                // Used data variables given via api
-            const status = document.createElement("p")
-            status.innerHTML = `<strong>Status</strong>:${currentStat}`
-            const image = document.createElement("p")
+            const image = document.querySelector(".image")
             image.innerHTML = `<img src=${pic} alt=Photo of the character></img>`
-            const species = document.createElement("p")
+
+            const name = document.querySelector(".name")
+            name.innerHTML = `<strong>Name</strong>:${charName}`
+
+            const status = document.querySelector('.status')
+            status.innerHTML = `<strong>Status</strong>:${currentStat}`
+
+            const species = document.querySelector('.species')
             species.innerHTML = `<strong>Species</strong>:${speciesOfChar}`
-                // for each episode make a link 
-                // const episodeLink = document.createElement("a")
-                // episodeLink.setAttribute("href", "#")
-                // episodeLink.innerHTML = '<strong>Episode</strong>:'
-                // episodeLink.innerHTML = `${episodesCharIsIn}`
+
+            const episodeLink = document.querySelector('.episode a')
+            episodeLink.setAttribute("href", "#")
+            episodeLink.innerHTML = '<strong>Episode</strong>:'
+            episodeLink.innerHTML = `${episodesCharIsIn}`
 
             output.innerHTML = ""
             output.append(image, name, status, species, episode)
                 // console.log(status, species, episodeLink)
 
             p.remove()
+
+
             const link = document.createElement("a")
             link.setAttribute("href", "#")
             link.innerHTML = `${charName}`
@@ -125,19 +133,20 @@ form.addEventListener("submit", (event) => {
             searched.append(link)
 
             p.innerHTML = ""
-            link.addEventListener("click", (event) => {
-                fetch(url)
-                    .then(res => res.json())
-                    .then((res) => {
-                        const ul = document.createElement("ul")
-                        ul.innerHTML = `${charName}`
-                        searched.innerHTML = ""
-                        searched.append(name)
-                    })
-                    // .innerHTML = `<h2>${charName}</h2>` // this is allowing the text to be dynamic 
-                    // searched.append(image, name, status, species, episodeLink)
+                // link.addEventListener("click", (event) => {
+                //     fetch(url)
+                //         .then(res => res.json())
+                //         .then((res) => {
+                //             // p.remove()
+                //             const linkForSearched = document.createElement("a")
+                //             linkForSearched.setAttribute('href', 'a')
+                //             searched.innerHTML = `${charName}`
+                //             searched.append(name)
+                //         })
+                //     searched.innerHTML = `<h2>${charName}</h2>` // this is allowing the text to be dynamic 
+                //     searched.append(image, name, status, species, episode)
 
-            })
+            // })
         })
 
 
