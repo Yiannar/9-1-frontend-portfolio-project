@@ -2,6 +2,9 @@
 
 In this portfolio, I've had the opportunity to design a webpage using the Rick and Morty Api https://rickandmortyapi.com/documentation/#get-a-single-character. 
 
+###Deployed Site:
+https://yiannar.github.io/9-1-frontend-portfolio-project/
+
 Page Setup
 Getting started
 Fork and clone this repository.
